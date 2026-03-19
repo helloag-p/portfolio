@@ -31,17 +31,17 @@ export function ProjectsSection() {
       tags: ["MERN", "JWT", "REST APIs", "MongoDB"],
       codeUrl: "", // optional (if private, leave empty)
       demoUrl: "",
-    },
-    {
-      id: 4,
-      title: "Portfolio Website",
-      description:
-        "Designed and deployed a modern developer portfolio with responsive UI, dark mode, and optimized performance. Showcases projects, coding profiles, and technical expertise.",
-      imageUrl: "/portfolio3.png",
-      tags: ["React", "Tailwind", "TypeScript"],
-      codeUrl: "https://github.com/helloag-p/portfolio",
-      demoUrl: "",
-    },
+    }
+    // {
+    //   id: 4,
+    //   title: "Portfolio Website",
+    //   description:
+    //     "Designed and deployed a modern developer portfolio with responsive UI, dark mode, and optimized performance. Showcases projects, coding profiles, and technical expertise.",
+    //   imageUrl: "/rgen.png",
+    //   tags: ["React", "Tailwind", "TypeScript"],
+    //   codeUrl: "https://github.com/helloag-p/portfolio",
+    //   demoUrl: "",
+    // },
   ];
 
   return (
