@@ -5,47 +5,42 @@ export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "Train Tracker Website",
+      title: "Uber Clone (Real-Time Ride System)",
       description:
-        "Implemented real-time train tracking using live location APIs, a feedback form, and mock interfaces for PNR status and coach layout. Designed full frontend/backend flow for future API integration.",
-      imageUrl: "/train-tracker2.png",
-      tags: ["JavaScript", "TypeScript", "NodeJS", "React"],
-      codeUrl:
-        "https://github.com/BismarckSVBP/Train-Running-Status-and-PNR-Checker-FullStack-Project-in-MERN",
-      demoUrl: "https://train-tracker-ashy.vercel.app/",
+        "Developed a real-time ride-hailing platform with live location tracking using Socket.IO. Optimized communication to reduce latency by ~30ms and handled 50+ concurrent users with efficient bidirectional data flow.",
+      imageUrl: "/uber.png",
+      tags: ["React", "Node.js", "Socket.IO", "MongoDB"],
+      codeUrl: "https://github.com/helloag-p/UBER", // update if needed
+      demoUrl: "",
     },
     {
       id: 2,
-      title: "Authentication through OTP Verification",
+      title: "CDC Website (Event Management System)",
       description:
-        "Secure signup and login system with email OTP verification, password reset functionality, and protected routes. Includes a responsive contact form with backend integration.",
-      imageUrl: "/authentication3.png",
-      tags: ["JavaScript", "NodeJS", "React", "MongoDB"],
-      codeUrl:
-        "https://github.com/BismarckSVBP/Authentication-and-contactUs-template-MERN-project",
-      demoUrl: "https://authentication-frontend-khaki-eta.vercel.app/login",
+        "Built and scaled backend services for a production website handling 500+ event registrations. Designed REST APIs with validation and optimized concurrent request handling for peak traffic stability.",
+      imageUrl: "/cdc.png",
+      tags: ["React", "Node.js", "Express", "MongoDB"],
+      demoUrl: "https://cdc.mmmut.org",
     },
     {
       id: 3,
-      title: "Abhay's Portfolio Website",
+      title: "E-Commerce Platform (Internship Project)",
       description:
-        "A personal portfolio website showcasing my projects, skills, and achievements. Built with modern web technologies and responsive design for an engaging user experience.",
-      imageUrl: "/portfolio3.png",
-      tags: ["React", "TailwindCSS", "TypeScript", "NodeJS"],
-      codeUrl: "https://github.com/BismarckSVBP/Portfolio-website",
-      demoUrl: "https://portfolio-website-frontend-phi.vercel.app/",
+        "Developed a production-grade MERN e-commerce application serving 30K–40K users. Built scalable backend modules processing 1000+ API requests/day with secure authentication and role-based access control.",
+      imageUrl: "/ecommerce.png",
+      tags: ["MERN", "JWT", "REST APIs", "MongoDB"],
+      codeUrl: "", // optional (if private, leave empty)
+      demoUrl: "",
     },
     {
       id: 4,
-      title: "URL Shortener Website",
+      title: "Portfolio Website",
       description:
-        "Developed a secure URL shortener using JWT, short-id for unique links, and MongoDB for storage. Tracked analytics like click events and dynamically rendered data using EJS.",
-      imageUrl:
-        "/url-shortner.png",
-      tags: ["JavaScript", "EJS", "NodeJS", "MongoDB"],
-      codeUrl:
-        "https://github.com/BismarckSVBP/Url-shortner-Project-with-auth",
-      demoUrl: "", // No demo link
+        "Designed and deployed a modern developer portfolio with responsive UI, dark mode, and optimized performance. Showcases projects, coding profiles, and technical expertise.",
+      imageUrl: "/portfolio3.png",
+      tags: ["React", "Tailwind", "TypeScript"],
+      codeUrl: "https://github.com/helloag-p/portfolio",
+      demoUrl: "",
     },
   ];
 
@@ -53,20 +48,24 @@ export function ProjectsSection() {
     <section id="projects" className="newspaper-container py-12 min-h-screen">
       <h2 className="section-title">FEATURED PROJECTS</h2>
 
+      <p className="text-center text-muted-foreground mb-10">
+        Real-world systems focused on scalability, performance, and backend engineering
+      </p>
+
       <div className="space-y-12">
         {projects.map((project, index) => (
           <article
             key={project.id}
-            className={`newspaper-border p-4 md:p-6 flex flex-col md:flex-row gap-6 ${
-              index % 2 === 0 ? "" : "bg-muted"
+            className={`newspaper-border p-4 md:p-6 flex flex-col md:flex-row gap-6 transition-all duration-300 hover:shadow-lg ${
+              index % 2 !== 0 ? "bg-muted" : ""
             }`}
           >
             {/* Image */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 overflow-hidden rounded-md">
               <img
                 src={project.imageUrl}
-                alt={`${project.title} Screenshot`}
-                className="rounded-md shadow-md border w-full h-full object-cover"
+                alt={project.title}
+                className="shadow-md border w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
 
@@ -76,11 +75,12 @@ export function ProjectsSection() {
                 <h3 className="article-title">{project.title}</h3>
                 <p className="article-lead mb-4">{project.description}</p>
 
+                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-newspaper-lightgray dark:bg-newspaper-gray/30 text-sm rounded-sm"
+                      className="px-3 py-1 text-xs font-medium border rounded-full bg-newspaper-lightgray dark:bg-newspaper-gray/30"
                     >
                       {tag}
                     </span>
@@ -88,31 +88,26 @@ export function ProjectsSection() {
                 </div>
               </div>
 
+              {/* Buttons */}
               <div className="flex gap-4 mt-auto">
-                <a
-                  href={project.codeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="outline" size="sm" className="group">
-                    <Github size={16} className="mr-2" />
-                    Code
-                    <ArrowRight
-                      size={14}
-                      className="ml-1 opacity-0 group-hover:opacity-100 transition-all"
-                    />
-                  </Button>
-                </a>
+                {project.codeUrl && (
+                  <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="group">
+                      <Github size={16} className="mr-2" />
+                      Code
+                      <ArrowRight
+                        size={14}
+                        className="ml-1 opacity-0 group-hover:opacity-100 transition-all"
+                      />
+                    </Button>
+                  </a>
+                )}
 
                 {project.demoUrl && (
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="sm" className="group">
                       <ExternalLink size={16} className="mr-2" />
-                      Demo
+                      Live Demo
                       <ArrowRight
                         size={14}
                         className="ml-1 opacity-0 group-hover:opacity-100 transition-all"

@@ -58,7 +58,7 @@ export function AboutSection() {
 
             {/* Image */}
             <img
-              src="/picture5.jpg"
+              src="\IMG-20250102-WA0031.jpg"
               alt="Parv Agarwal"
               className="w-32 h-32 rounded-full object-cover mb-4 border shadow"
             />
