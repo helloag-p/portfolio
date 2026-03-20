@@ -8,9 +8,9 @@ export function ProjectsSection() {
       title: "Uber Clone (Real-Time Ride System)",
       description:
         "Developed a real-time ride-hailing platform with live location tracking using Socket.IO. Optimized communication to reduce latency by ~30ms and handled 50+ concurrent users with efficient bidirectional data flow.",
-      imageUrl: "/uber.png",
+      imageUrl: "/uber2.png",
       tags: ["React", "Node.js", "Socket.IO", "MongoDB"],
-      codeUrl: "https://github.com/helloag-p/UBER", // update if needed
+      codeUrl: "https://github.com/helloag-p/UBER",
       demoUrl: "",
     },
     {
@@ -23,25 +23,14 @@ export function ProjectsSection() {
       demoUrl: "https://cdc.mmmut.org",
     },
     {
-      id: 3,
-      title: "E-Commerce Platform (Internship Project)",
-      description:
-        "Developed a production-grade MERN e-commerce application serving 30K–40K users. Built scalable backend modules processing 1000+ API requests/day with secure authentication and role-based access control.",
-      imageUrl: "/ecommerce.png",
-      tags: ["MERN", "JWT", "REST APIs", "MongoDB"],
-      codeUrl: "", // optional (if private, leave empty)
-      demoUrl: "",
-    }
-    // {
-    //   id: 4,
-    //   title: "Portfolio Website",
-    //   description:
-    //     "Designed and deployed a modern developer portfolio with responsive UI, dark mode, and optimized performance. Showcases projects, coding profiles, and technical expertise.",
-    //   imageUrl: "/rgen.png",
-    //   tags: ["React", "Tailwind", "TypeScript"],
-    //   codeUrl: "https://github.com/helloag-p/portfolio",
-    //   demoUrl: "",
-    // },
+  id: 3,
+  title: "AI UI Generator (Deterministic Multi-Agent System)",
+  description:
+    "Engineered a multi-agent system that transforms natural-language UI intent into structured JSON plans and deterministic React layouts. Implemented a Planner–Generator–Validator–Explainer pipeline with schema validation, prompt-injection safeguards, and whitelist-based rendering. Enabled versioning, rollback, and explainable UI generation.",
+  imageUrl: "/aiui.png",
+  tags: ["React", "Node.js", "LLM", "System Design", "Security"],
+  demoUrl: "https://ai-ui-generator-puce.vercel.app/",
+}
   ];
 
   return (
