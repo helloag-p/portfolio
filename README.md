@@ -32,7 +32,7 @@ A modern **full-stack portfolio website** with a unique **vintage newspaper-styl
 ---
 
 ## 📁 Project Structure
-
+```
 vintage-portfolio/
 │
 ├── frontend/ # React frontend
@@ -49,7 +49,7 @@ vintage-portfolio/
 │
 └── README.md
 
-
+```
 ---
 
 ## ⚙️ Setup Instructions
