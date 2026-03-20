@@ -106,6 +106,7 @@ Requires App Password (not normal password)
 Enable 2FA in Gmail
 Go to Google Account → Security → App Password
 
+
 ```
 🧠 Key Highlights
 
@@ -114,4 +115,5 @@ Clean UI with unique newspaper theme
 Proper API integration between frontend & backend
 Error handling + validation in contact form
 Smooth scrolling & interactive navigation
+Modern Design
 ```
