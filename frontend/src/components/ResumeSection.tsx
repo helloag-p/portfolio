@@ -7,7 +7,7 @@ export function ResumeSection() {
     const toastId = toast.loading("Downloading resume...");
 
     try {
-      const response = await fetch("/ParvClgres.pdf"); // ✅ fixed
+      const response = await fetch("/Parvsre.pdf"); // ✅ fixed
       if (!response.ok) throw new Error("Failed to fetch resume");
 
       const blob = await response.blob();

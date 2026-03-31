@@ -5,13 +5,13 @@ export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "Uber Clone (Real-Time Ride System)",
+      title: "GOLF CHARITY SUBSCRIPTION PLATFORM",
       description:
-        "Developed a real-time ride-hailing platform with live location tracking using Socket.IO. Optimized communication to reduce latency by ~30ms and handled 50+ concurrent users with efficient bidirectional data flow.",
-      imageUrl: "/uber2.png",
-      tags: ["React", "Node.js", "Socket.IO", "MongoDB"],
-      codeUrl: "https://github.com/helloag-p/UBER",
-      demoUrl: "",
+        "A Full-Stack Next.js platform where golfers subscribe, track their Stableford scores, participate in monthly prize draws powered by a custom algorithm, and automatically donate to a charity they choose — with a complete admin panel to manage draws, users, winners, and charities",
+      imageUrl: "/str.png",
+      tags: ["Next.js", "TypeScript", "Supabase", "Stripe"],
+      codeUrl: "https://github.com/helloag-p/golf-charity-platform",
+      demoUrl: "https://golf-charity-platform-navy-sigma.vercel.app",
     },
     {
       id: 2,
