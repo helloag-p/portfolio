@@ -80,7 +80,7 @@ export const CONTACT_US_EMAIL_TEMPLATE = `
       <h1>New Message from Portfolio</h1>
     </div>
     <div class="content">
-      <p>Hello Abhay,</p>
+      <p>Hello Parv,</p>
       <p>You have received a new message from your portfolio contact form:</p>
 
       <div class="details">
@@ -99,7 +99,7 @@ export const CONTACT_US_EMAIL_TEMPLATE = `
       <p class="signature">
         Please respond to this message as soon as possible.<br><br>
         Best regards,<br>
-        Abhay's Portfolio System
+        Parv's Portfolio System
       </p>
     </div>
     <div class="footer">
@@ -220,11 +220,11 @@ export const CONTACT_US_EMAIL_TEMPLATE_COPY_TO_USER = `
 
       <p class="signature">
         Best regards,<br>
-        Abhay Kumar
+        Parv Agarwal
       </p>
     </div>
     <div class="footer">
-      <p>This is an automated response from Abhay’s portfolio website. I’ll reach out to you soon!</p>
+      <p>This is an automated response from Parv’s portfolio website. I’ll reach out to you soon!</p>
     </div>
   </div>
 </body>
